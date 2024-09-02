@@ -44,8 +44,8 @@ test = {   'name': 'q1-7',
                                                '>>> sys.stdout = captured_output\n'
                                                ">>> result = calculate_order('DUAL-RX7800XT-O16G', 79455, 23)\n"
                                                '>>> print_order_form(result)\n'
-                                               ">>> expected_output = '注文商品           : DUAL-RX7800XT-O16G\\n＠    79,455円 × 23個\\n税抜価格           :  1,827,465円\\n消費税            :    "
-                                               "182,746円\\n合計金額           :  2,010,211円\\n'\n"
+                                               ">>> expected_output = '注文商品      : DUAL-RX7800XT-O16G\\n＠    79,455円 × 23個\\n税抜価格      :  1,827,465円\\n消費税\\u3000      :    182,746円\\n合計金額      :  "
+                                               "2,010,211円\\n'\n"
                                                ">>> assert captured_output.getvalue() == expected_output, 'テストケース1が失敗しました'\n"
                                                '>>> sys.stdout = sys.__stdout__\n',
                                        'hidden': False,
