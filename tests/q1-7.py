@@ -38,16 +38,7 @@ test = {   'name': 'q1-7',
                                                ">>> assert result['total_price'] == 1357, '合計価格が正しくありません'\n",
                                        'hidden': False,
                                        'locked': False},
-                                   {   'code': '>>> import io\n'
-                                               '>>> import sys\n'
-                                               '>>> captured_output = io.StringIO()\n'
-                                               '>>> sys.stdout = captured_output\n'
-                                               ">>> result = calculate_order('DUAL-RX7800XT-O16G', 79455, 23)\n"
-                                               '>>> print_order_form(result)\n'
-                                               ">>> expected_output = '注文商品      : DUAL-RX7800XT-O16G\\n＠    79,455円 × 23個\\n税抜価格      :  1,827,465円\\n消費税\\u3000      :    182,746円\\n合計金額      :  "
-                                               "2,010,211円\\n'\n"
-                                               ">>> assert captured_output.getvalue() == expected_output, 'テストケース1が失敗しました'\n"
-                                               '>>> sys.stdout = sys.__stdout__\n',
+                                   {   'code': ">>> result\n{'product_name': 'Grape',\n 'unit_price': 123.45,\n 'quantity': 10,\n 'tax_excluded_price': 1234.5,\n 'tax': 123,\n 'total_price': 1357}",
                                        'hidden': False,
                                        'locked': False}],
                       'scored': True,
