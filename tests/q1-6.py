@@ -1,7 +1,7 @@
 OK_FORMAT = True
 
 test = {   'name': 'q1-6',
-    'points': None,
+    'points': 3,
     'suites': [   {   'cases': [   {   'code': ">>> (total, average) = subject_total(100, 100, 100, 100, 100)\n>>> assert total == 500, '合計点が正しくありません'\n>>> assert average == 100.0, '平均点が正しくありません'\n",
                                        'hidden': False,
                                        'locked': False},
