@@ -6,8 +6,7 @@ test = {   'name': 'q6-2',
                                    {   'code': '>>> import pickle\n'
                                                '>>> import hashlib\n'
                                                '>>> ans62_digest = hashlib.sha256(pickle.dumps(ans62.values)).hexdigest()\n'
-                                               ">>> ans62_digest == 'e8f7d433441a282bde9c117e7ce8f6cb29cf21b0340f0100ed8357a247d80a26'\n"
-                                               'True',
+                                               ">>> ans62_digest == 'e8f7d433441a282bde9c117e7ce8f6cb29cf21b0340f0100ed8357a247d80a26'\n",
                                        'hidden': False,
                                        'locked': False}],
                       'scored': True,
