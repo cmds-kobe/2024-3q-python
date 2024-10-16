@@ -1,7 +1,7 @@
 OK_FORMAT = True
 
 test = {   'name': 'q6-6v2',
-    'points': None,
+    'points': 3,
     'suites': [   {   'cases': [   {'code': '>>> \n', 'hidden': False, 'locked': False},
                                    {   'code': '>>> ax = ans66_graph.get_axes()[0]\n'
                                                '>>> lines = ax.get_lines()\n'
