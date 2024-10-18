@@ -1,13 +1,12 @@
 OK_FORMAT = True
 
-test = {   'name': 'q7-5',
+test = {   'name': 'q7-6',
     'points': 3,
     'suites': [   {   'cases': [   {   'code': '>>> import hashlib\n'
                                                '>>> \n'
                                                '>>> def df2digest(df):\n'
                                                "...     return hashlib.sha256(str(tuple(df.values.tolist())).encode('utf-8')).hexdigest()\n"
-                                               ">>> assert df2digest(ans75_s) == 'bf96610b450afe0d459e90333a44a8e28f6efccc829a90146ac17ade98473e7b'\n"
-                                               ">>> assert df2digest(ans75_c) == '75505ecf234c265ad233561a8ce94047cbe347e42008b2dc211e31ecfe940c64'\n",
+                                               ">>> assert df2digest(ans76_a) == '2012cdd895c997ad01ea070bd80199a37121a3aef53d115b0012a4979112ec3e'\n",
                                        'hidden': False,
                                        'locked': False}],
                       'scored': True,
