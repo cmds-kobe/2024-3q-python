@@ -6,8 +6,8 @@ test = {   'name': 'q6-2v3',
                                    {   'code': '>>> import hashlib\n'
                                                '>>> \n'
                                                '>>> def df2digest(df):\n'
-                                               "...     return hashlib.sha256(str(tuple(ans61.values.tolist())).encode('utf-8')).hexdigest()\n"
-                                               ">>> assert df2digest(ans62) == 'd4795f707932a570a380160382ca9d1443e45b59850dab7001d039a0dafb3430'\n",
+                                               "...     return hashlib.sha256(str(tuple(df.values.tolist())).encode('utf-8')).hexdigest()\n"
+                                               ">>> assert df2digest(ans62) == '8f3c51770fb6b5dbc351044e3b8e608faf4d2749bd92d8b284731b21ec0b5b18'\n",
                                        'hidden': False,
                                        'locked': False}],
                       'scored': True,
