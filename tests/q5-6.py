@@ -1,7 +1,7 @@
 OK_FORMAT = True
 
 test = {   'name': 'q5-6',
-    'points': None,
+    'points': 3,
     'suites': [   {   'cases': [   {   'code': '>>> result = ans56\n'
                                                '>>> ax = result.get_axes()[0]\n'
                                                '>>> children = ax.get_children()\n'
