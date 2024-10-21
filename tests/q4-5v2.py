@@ -2,12 +2,12 @@ OK_FORMAT = True
 
 test = {   'name': 'q4-5v2',
     'points': 3,
-    'suites': [   {   'cases': [   {   'code': '>>> import pickle\n'
-                                               '>>> import hashlib\n'
-                                               '>>> digest1 = hashlib.sha256(pickle.dumps(ans45.values)).hexdigest()\n'
-                                               ">>> assert digest1 == 'd7e8ce52861ae1cb7ba72dd902093eb1e0f5be4f7d0a2deb0c1f607a6119fcef'\n"
-                                               '>>> digest2 = hashlib.sha256(pickle.dumps(ans45_summary.values)).hexdigest()\n'
-                                               ">>> assert digest2 == '025b5b9fb982f458387d116aa4e994b811e7e5521ea033e6979ac7faaf6f2d0f'\n",
+    'suites': [   {   'cases': [   {   'code': '>>> import hashlib\n'
+                                               '>>> \n'
+                                               '>>> def df2digest(df):\n'
+                                               "...     return hashlib.sha256(str(tuple(df.values.tolist())).encode('utf-8')).hexdigest()\n"
+                                               ">>> assert df2digest(ans45) == 'b456932849c966386d2a738e80966680d020753792ef13295da8beb59af41b15'\n"
+                                               ">>> assert df2digest(ans45_summary) == 'a842f00cebc6d21b0cee01236043d826c6af9b103137396a7cf7bdecce4c52a8'\n",
                                        'hidden': False,
                                        'locked': False}],
                       'scored': True,
